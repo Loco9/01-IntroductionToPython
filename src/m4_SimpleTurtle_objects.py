@@ -117,7 +117,7 @@ boris.go_to(rg.Point(50,50))
 
 ###############################################################################
 #
-# TODO: 4.
+# DONE: 4.
 #   Add a few more lines of your own code to make one of the
 #   existing SimpleTurtles move some more and/or have different
 #   characteristics.
@@ -131,7 +131,7 @@ boris.go_to(rg.Point(50,50))
 
 ###############################################################################
 #
-# TODO: 5.
+# DONE: 5.
 #   The above code  CONSTRUCTS  two SimpleTurtle objects
 #   and gives those objects NAMES:
 #       boris    natasha
@@ -155,10 +155,15 @@ boris.go_to(rg.Point(50,50))
 #   As always, test by running the module.
 #
 ###############################################################################
+sampson = rg.SimpleTurtle()
+sampson.pen = rg.Pen('purple', 20)
 
+sampson.backward(50)
+sampson.left(80)
+sampson.forward(30)
 ###############################################################################
 #
-# TODO: 6.
+# DONE: 6.
 #   Run one more time to be sure that all is still OK.
 #   Ensure that no blue bars on the scrollbar-thing to the right remain.
 #
