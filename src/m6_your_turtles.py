@@ -27,3 +27,27 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 #
 #   Don't forget to COMMIT-and-PUSH when you are done with this module.
 ###############################################################################
+import rosegraphics as rg
+window = rg.TurtleWindow()
+
+davis = rg.SimpleTurtle('turtle')
+davis.pen = rg.Pen('red', 5)
+davis.speed = 8
+
+marry = rg.SimpleTurtle()
+marry.pen = rg.Pen('blue', 5)
+marry.speed = 8
+
+davis.go_to(rg.Point(100, 0))
+marry.go_to(rg.Point(-100, 0))
+
+for k in range(8):
+    davis.forward(20)
+    davis.left(50)
+    davis.go_to(rg.Point(100, 0))
+
+    marry.backward(20)
+    marry.right(50)
+    marry.go_to(rg.Point(-100, 0))
+
+window.close_on_mouse_click()
