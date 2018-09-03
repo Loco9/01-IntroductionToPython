@@ -52,5 +52,6 @@ blue_turtle.pen_down()
 blue_turtle.pen = rg.Pen('green', 10)
 
 blue_turtle.backward(150)
+print(9 - 7 + 3)
 
 window.close_on_mouse_click()
